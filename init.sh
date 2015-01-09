@@ -13,8 +13,8 @@
 
 # Configurations
 USER=boxup
-REPO=osx-ansible-playbook
-DEST=${HOME}/Workspace/OSX
+REPO=ansible-osx
+DEST=${HOME}/repos
 
 
 # Install Xcode
@@ -24,8 +24,6 @@ install_xcode() {
     return
   fi
 
-  echo "Install & Update OSX's Recommended Softwares..."
-  softwareupdate -i -r
   echo "Install Xcode..."
   echo "*** If a dialog is shown,\
     push 'Get Xcode' button to download Xcode before proceeding! ***"
